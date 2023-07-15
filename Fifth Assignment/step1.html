@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+        width: 50%;
+        margin: 60px auto;
+        display: grid;
+        grid-template-rows: 40px 40px 40px;
+        grid-template-columns: repeat(3,220px)220px;
+    }
+    #div1{
+        background-color: rgb(94, 94, 231);
+        text-align: center;
+        padding: 10px;
+
+    }
+    #div2{
+        background-color: rgb(202, 193, 193);
+        text-align: center;
+        padding: 10px;
+    }
+    #div3{
+        background-color:rgb(202, 193, 193);
+        text-align: center;
+        padding: 10px;
+    }
+
+        #div5{
+            margin: auto;
+            padding-right: 340px;
+            padding-left: 320px;
+            padding-bottom: 80px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="div1">Step 1:Account</div>
+        <div id="div2">Step 2:Personal Details</div>
+        <div id="div3">Step 3:Your Review</div>
+
+    </main>
+    
+    <form action="./step2.html">
+        <div id="div5">
+
+        <fieldset>
+            <legend><b> Account</b></legend>
+            <br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" name="email" required id="email" size="55" placeholder="Enter Your Email">
+            <br>
+            <br>
+            <label for="password">Password:</label><br>
+            <input type="password" minlength="8" max="15" size="55" required id="password" placeholder="Enter Your Password">
+            <br>
+            <br>
+            <label for="confirm password">Confirm Password:</label><br>
+            <input type="password" minlength="8" max="15" size="55" required id="confirm password" placeholder="Enter Your Confirm Password">
+            <br>
+            <br>
+
+            <a href="./index.html"><img src="C:\Users\Ptcl\Desktop\Form Assingment\Images\back.jpeg" width="140" height="70"></a>
+            <button><img src="C:\Users\Ptcl\Desktop\Form Assingment\Images\next.jpeg" width="140" height="70"></button>
+         </fieldset>
+         </div>
+     </form>
+</body>
+</html>

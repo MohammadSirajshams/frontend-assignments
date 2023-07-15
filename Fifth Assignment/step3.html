@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    main{
+        width: 50%;
+        margin: 60px auto;
+        display: grid;
+        grid-template-rows: 40px 40px 40px;
+        grid-template-columns: repeat(3,220px)220px;
+    }
+    #div1{
+        background-color: rgb(113, 179, 113);
+        text-align: center;
+        padding: 10px;
+
+    }
+    #div2{
+        background-color: rgb(113, 179, 113);
+        text-align: center;
+        padding: 10px;
+    }
+    #div3{
+        background-color:rgb(94, 94, 231);
+        text-align: center;
+        padding: 10px;
+    }
+
+        #div5{
+            margin: auto;
+            padding-right: 320px;
+            padding-left: 310px;
+            padding-bottom: 80px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="div1">Step 1:Account</div>
+        <div id="div2">Step 2:Personal Details</div>
+        <div id="div3">Step 3:Your Review</div>
+
+    </main>
+    <form action="./index.html">
+        <div id="div5">
+        <fieldset>
+        <legend><b> Your Review </b></legend>
+        <p>How did you hear about us?
+        <select name="How did you hear about us?">
+            <option disabled selected>Select your option</option>
+            <option value="bangladesh">From Newspaper</option>
+            <option value="England">From Relatives</option>
+            <option value="England">From Facebook</option>
+        </select></p>
+        <p>Would you visit again? <br>
+        <label for="Yes">Yes</label>
+        <input type="radio" name="Would you visit again?" required id="Yes">
+        <label for="No">No</label>
+        <input type="radio" name="Would you visit again?" required id="No">
+        <label for="Maybe">Maybe</label>
+        <input type="radio" name="Would you visit again?" required id="Maybe">
+    </p>
+        
+        <label for="Comments">Comments:</label><br>
+        <textarea name="Comments" required id="Comments" cols="40" rows="5" placeholder="Enter your comments here... "></textarea>
+        <p>Documents: <br>
+        <input type="file">
+        
+    </p>
+        <input type="checkbox" checked>Sign me up for email updates
+        <br>
+        <br>
+        <a href="./step2.html"><img src="C:\Users\Ptcl\Desktop\Form Assingment\Images\back.jpeg" width="140" height="70"></a>
+    
+        <button><img src="C:\Users\Ptcl\Desktop\Form Assingment\Images\submit.jpeg" width="140" height="70"></button>
+        
+
+      
+
+
+    </fieldset>
+    <div id="div5">
+    </form>
+</body>
+</html>

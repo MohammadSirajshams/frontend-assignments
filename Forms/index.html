@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center> <h1>Students Form</h1></center>
+    <form action="">
+        <fieldset>
+            <legend><b>Contact Details</b></legend>
+            <center>
+        <p>
+           
+            <label for="Username" >Username</label>
+            <input required id="Username" placeholder="Enter Your Name" name="Username" size="25" maxlength="30">
+        </p>
+            <p>Password:
+                <input type="password"name="Password" placeholder="Enter Password" size="25" maxlength="30">
+            </p>
+            <p>
+                Number:
+                <input type="Number"name="Number" placeholder="Enter Your Number" size="11" maxlength="9">
+            </p>
+            <p>
+                Enter Your Comments:<br>
+                <textarea name="comments" id="commemnts" placeholder="Enter Your Comments" cols="10" rows="5"></textarea>
+            </p>
+        </center>
+        </fieldset>
+        <fieldset>
+            <legend><b>Personal Details </b></legend>
+        <center>
+            <p>
+                <p>
+                    Enter Your Email:
+                    <input type="email" name="email" id="email" placeholder="Enter Email">
+                </p>
+                <p>
+                    Enter URL:
+                    <input type="url" name="url" id="url" placeholder="Enter URL">
+                </p>
+                <p>
+                Gender:<br>
+                Male<input type="radio" name="Gender">
+                Female<input type="radio" name="Gender">
+                Others<input type="radio" name="Gender">
+                </p>
+            </p>
+            <!-- <p>
+                Answers: <br>
+                Select more than one option <br>
+                
+                
+                Apple<input type="checkbox" name="Answers" value="Apple"> <br>
+                Mango<input type="checkbox" name="Answers" value="Mango"> <br>
+                Banana<input type="checkbox" name="Answers" value="Banana"><br>
+                Orange<input type="checkbox" name="Answers" value="Orange"><br>
+            </p> -->
+            <p>
+                Select Your Country:
+                <select name="Country" >
+                    <option selected value="Pakistan">Pakistan</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="England">England</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Saudia Arabia">Saudia Arabia</option>
+                </select>
+                </p>
+                <p>
+                    Upload Your File:
+                    <input type="file">
+                </p>
+                <p>
+                    Enter Your D.O.B:
+                    <input  required id="date"type="date" name="date" id="date">
+                </p>
+
+            </center>
+            </fieldset>
+                <p>
+                    Submit Your Response:
+                    <input type="submit" value="submit">
+                </p>
+                <p>
+                    <input type="image" width="300px"src="data:image/png;base64,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">
+                </p>  
+    </form>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EzMNwNQOme4" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+    
+</body>
+</html>
